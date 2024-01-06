@@ -5,8 +5,7 @@ async def filter_messages(message: types.Message):
     '''
     функция которая ловит маты
     '''
-    MATY = ['сука', 'сучка', 'пидор', 'долбаёб', 'долбаеб', 'пидр',
-            'бля', 'пизда', 'пиздец', 'хуй', 'пидарас', 'дурак', 'еба', 'лох']
+    MATY = ['дурак']
     if message.chat.type != 'private':
         for i in MATY:
             if i in message.text.lower().replace(' ', ''):
